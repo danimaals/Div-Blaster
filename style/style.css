@@ -1,0 +1,81 @@
+
+/* Main Containers */
+.outer-container {
+  height: 600px;
+  width: 500px;
+  background: #eee;
+  border: 5px solid #ccc;
+}
+.game-window {
+  height: 100%;
+  width: 300px;
+  background: #222;
+  border-right: 3px solid #53f;
+  float: left;
+}
+.status-window {
+  height: 100%;
+  width: 197px;
+  background: #feb;
+  float: right;
+  text-align: center;
+}
+.settings-panel {
+  margin-bottom: 0px;
+  text-align: right;
+  display: none;
+}
+.splash-screen {
+  text-align: center;
+  color: white;
+}
+.game-over {
+  text-align: center;
+  display: none;
+  color: white;
+}
+
+/* Game Objects */
+.ship {
+  top: 555px;
+  left: 122px;
+  position: absolute;
+  display: inline-block;
+}
+.rocket {
+  position: absolute;
+}
+.rocket img {
+  height: 40px;
+}
+.asteroid {
+  position: absolute;
+}
+.shield {
+  position: absolute;
+}
+.life-icons {
+  position: relative;
+  float: right;
+  display: grid;
+}
+#icon1 {
+  display: none;
+}
+#icon2 {
+  display: none;
+}
+#explosion {
+  position: absolute;
+  display: none;
+  top: 0px;
+  right: 0px;
+  z-index: 10;
+}
+#deployed-shield {
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: -1.5px;
+  z-index: 10;
+}

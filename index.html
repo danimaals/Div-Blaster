@@ -1,0 +1,83 @@
+<html>
+
+<title>Div Blaster</title>
+
+<!-- JS -->
+<script src='scripts/jquery.min.js'></script>
+<script src='scripts/page.js'></script>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="style/style.css">
+
+<audio class="audios" id="explodeSound"> 
+  <source src="audio/explode.wav" type="audio/mpeg">
+</audio>
+<audio class="audios" id="gameoverSound"> 
+  <source src="audio/gameover.wav" type="audio/mpeg">
+</audio>
+<audio class="audios" id="introSound"> 
+  <source src="audio/intro.mp3" type="audio/mpeg">
+</audio>
+<audio class="audios" id="rocketSound"> 
+  <source src="audio/rocket.wav" type="audio/mpeg">
+</audio>
+
+<!-- HTML -->
+<body>
+  <div class='outer-container'>
+    <div class='game-window'>
+      <div class='life-icons'>
+        <img id='icon1' src='img/fighter.png' height='25px'/>
+        <img id='icon2' src='img/fighter.png' height='25px'/>
+      </div>
+      <br>
+      <br>
+      <div class='splash-screen'>
+        <h1>Div Blaster</h1>
+        <h2>Created by Daniel Hipshire Jr.</h2>
+        <p>Space: Fire a rocket</p>
+        <p>Arrow keys: Move the ship</p>
+        <button type='button' id='start-button'>Start Game</button>
+      </div>
+      <div class='game-over'>
+        <h1>GAME OVER</h1>
+        <h2 id='final-score'>Your Score: 0</h2>
+        <button type='button' id='go-back'>Go Back</button>
+      </div>
+      <div id='enterprise' class='ship'>
+        <img class='ship-avatar' src='img/fighter.png' height='50px'/> <!--ship img: src='http://i.stack.imgur.com/rsH6n.png'-->
+        <div id='explosion'>
+          <img src='img/explosion.png' height='50px'/>
+        </div>
+        <div id='deployed-shield'>
+          <img src='img/shield.png' height='60px'/>
+        </div>
+      </div>
+    </div>
+
+    <div class='status-window'>
+      <h3>Welcome!</h3>
+      <hr>
+      <br>
+      <p>score:</p>
+      <h1 id='score-box'>0</h1>
+      <br>
+      <p>accuracy:</p>
+      <h1 id='accuracy-box'>0%</h1>
+      <button type='button' id='settings-button'>Open Settings Panel</button>
+      <br>
+      <div class='settings-panel'>
+        <p style='margin-bottom: 0px'>Asteroid Spawning Rate <br> (# per second)</p>
+        
+        <input type='text' id='asteroid-spawnrate' placeholder='Min. 0.2 Max. 4'>
+        <br>
+        Mute Audio
+        <input type='checkbox' id='audio-toggle' checked='true' value='Mute Audio'>
+        <br>
+        <button type='button' id='update-settings'>UPDATE</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
