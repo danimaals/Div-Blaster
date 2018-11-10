@@ -10,3 +10,5 @@ Spacebar: fire a rocket
 SETTINGS
  
 Users can control the asteroid spawn rate and mute/unmute the audio in the settings menu. Changes are only applied once the Update Settings is clicked.
+
+This project uses JavaScript/jQuery, and HTML5/CSS.
